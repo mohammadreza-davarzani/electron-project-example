@@ -1,0 +1,17 @@
+{
+  "name": "electron-pj",
+  "productName": "electron project",
+  "version": "1.0.0",
+  "description": "the first simple electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "mohammadreza",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^30.0.2",
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  }
+}
