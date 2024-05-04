@@ -12,6 +12,15 @@ const loadImage = (e) =>{
     console.log("please select an Image!");
     return;
   }
+  const image = new Image();
+  image.src = URL.createObjectURL(file)
+  image.onload = function(){
+    widthInput.value = this.width;
+    heightInput.value = this.height;
+
+  }
+  filename.innerText = file.name
+  form.style.display = 'block'
   console.log("success");
 
 }
