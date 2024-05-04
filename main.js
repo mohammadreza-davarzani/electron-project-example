@@ -13,8 +13,14 @@ let aboutWindow;
 // Main Window
 function createMainWindow() {
   mainWindow = new BrowserWindow({
+    title:"MIC Image resize example",
     width: isDev ? 1000 : 500,
     height: 600,  
+    webPreferences:{
+        contextIsolation:true,
+        nodeIntegration:true,
+        preload:path.join(__dirname,'./preload.js')
+    }
   });
 
   // Show devtools automatically if in development
