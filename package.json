@@ -1,16 +1,19 @@
 {
-  "name": "electron-pj",
-  "productName": "electron project",
+  "name": "imageresizer",
+  "productName":"ImageResizer",
   "version": "1.0.0",
-  "description": "the first simple electron app",
+  "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "author": "mohammadreza",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.2.0"
+  },
   "dependencies": {
-    "electron": "^30.0.2",
     "resize-img": "^2.0.0",
     "toastify-js": "^1.12.0"
   }
